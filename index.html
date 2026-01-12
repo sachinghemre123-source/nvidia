@@ -2,46 +2,193 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NVIDIA | AI & Graphics</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPU Power Hub</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f19;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #00ffcc, #0066ff);
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #11162a;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #00ffcc;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161c33;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #333;
+      text-align: left;
+    }
+    th {
+      color: #00ffcc;
+    }
+    footer {
+      background: #11162a;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">NVIDIA</div>
-  <nav>
-    <a href="#">Products</a>
-    <a href="#">Solutions</a>
-    <a href="#">Developers</a>
-    <a href="#">Support</a>
-  </nav>
+<header>
+  <h1>GPU Power Hub</h1>
+  <p>Your all-in-one guide to GPU power, performance, and comparisons</p>
 </header>
 
-<section class="hero">
-  <h1>The Future of AI & Graphics</h1>
-  <p>Powering the world’s most advanced GPUs and AI platforms.</p>
-  <button>Explore Products</button>
+<nav>
+  <a href="#about">About</a>
+  <a href="#power">GPU Power</a>
+  <a href="#compare">Compare GPUs</a>
+  <a href="#gallery">Gallery</a>
+</nav>
+
+<section id="about">
+  <h2>About This Site</h2>
+  <p>
+    GPU Power Hub helps gamers and beginners understand how powerful different graphics cards are. 
+    You can explore power usage, performance levels, and see visuals of popular GPUs.
+  </p>
 </section>
 
-<section class="products">
-  <h2>Featured Products</h2>
-  <div class="cards">
+<section id="power">
+  <h2>Understanding GPU Power</h2>
+  <div class="card-grid">
     <div class="card">
-      <h3>GeForce RTX</h3>
-      <p>Ultimate performance for gamers and creators.</p>
+      <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7" alt="GPU inside PC">
+      <h3>Wattage (TDP)</h3>
+      <p>GPU power is measured in watts. Higher wattage usually means more performance, but also more heat.</p>
     </div>
     <div class="card">
-      <h3>AI & Data Center</h3>
-      <p>Accelerating AI workloads worldwide.</p>
+      <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae" alt="Gaming PC">
+      <h3>Performance</h3>
+      <p>More power allows higher FPS, better graphics, and smoother gameplay in modern games.</p>
     </div>
     <div class="card">
-      <h3>Automotive</h3>
-      <p>Driving the future of autonomous vehicles.</p>
+      <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9" alt="PC cooling">
+      <h3>Cooling</h3>
+      <p>Powerful GPUs need good cooling. Always pair high-end GPUs with proper airflow.</p>
+    </div>
+  </div>
+</section>
+
+<section id="compare">
+  <h2>Popular GPU Power Comparison</h2>
+  <table>
+    <tr>
+      <th>GPU</th>
+      <th>Power (Watts)</th>
+      <th>Performance Level</th>
+    </tr>
+    <tr>
+      <td>GTX 1660</td>
+      <td>120W</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>RTX 3060</td>
+      <td>170W</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>RTX 4070</td>
+      <td>200W</td>
+      <td>Very High</td>
+    </tr>
+    <tr>
+      <td>RTX 4090</td>
+      <td>450W</td>
+      <td>Extreme</td>
+    </tr>
+  </table>
+</section>
+
+<section id="gallery">
+  <h2>GPU Gallery</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1624704764134-7d4f1f42c0f7" alt="Graphics Card">
+      <h3>Modern GPUs</h3>
+      <p>Designed for gaming, streaming, and content creation.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="RGB PC">
+      <h3>Gaming Builds</h3>
+      <p>RGB builds paired with powerful GPUs for maximum performance.</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 NVIDIA Demo Website</p>
+  <p>© 2026 GPU Power Hub | Built with GitHub Pages</p>
 </footer>
+
+</body>
+</html>
